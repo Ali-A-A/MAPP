@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorful4"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/new_btn"
+        android:id="@+id/todos"/>
+
+
+<!--    <com.skyfishjy.library.RippleBackground-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/todos"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:id="@+id/content_ripple_todo"-->
+<!--        app:rb_color="#0099CC"-->
+<!--        app:rb_radius="12dp"-->
+<!--        app:rb_rippleAmount="4"-->
+<!--        app:rb_duration="3500"-->
+<!--        app:rb_scale="6">-->
+        <Button
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/todos"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#FFCCCB"
+            android:text="New Work"
+            android:textColorHint="#cccccc"
+
+            android:textAlignment="center"
+            android:background="#00000000"
+            android:id="@+id/new_btn"/>
+
+<!--    </com.skyfishjy.library.RippleBackground>-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:background="@drawable/edit_text"-->
+<!--        android:id="@+id/new_btn"-->
+<!--        android:text="new work"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/todos" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

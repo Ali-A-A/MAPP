@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorful2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:background="@drawable/edit_text"
+        android:textSize="20sp"
+        android:id="@+id/quote"
+        android:text="Click Button!"/>
+
+<!--    <com.skyfishjy.library.RippleBackground-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/quote"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:id="@+id/content_ripple"-->
+<!--        app:rb_color="#0099CC"-->
+<!--        app:rb_radius="9dp"-->
+<!--        app:rb_rippleAmount="4"-->
+<!--        app:rb_duration="3500"-->
+<!--        app:rb_scale="6">-->
+        <Button
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/quote"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#FFCCCB"
+            android:text="New Quote"
+            android:textColorHint="#cccccc"
+
+            android:textAlignment="center"
+            android:background="#00000000"
+            android:id="@+id/quote_btn"/>
+
+<!--    </com.skyfishjy.library.RippleBackground>-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/quote"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:text="New Quote"-->
+<!--        android:textColorHint="#cccccc"-->
+<!--        android:textAlignment="center"-->
+<!--        android:background="@drawable/edit_text"-->
+<!--        android:id="@+id/quote_btn"/>-->
+
+
+<!--    <ProgressBar-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="invisible"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:id="@+id/progress_bar"/>-->
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:indicatorName="BallPulseIndicator"
+        android:visibility="invisible"
+        app:indicatorColor="#0099CC"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

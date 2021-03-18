@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorful4"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        android:background="@drawable/edit_text"
+        android:fontFamily="@font/yekan"
+        android:textSize="15sp"
+        android:padding="10dp"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/title_detail"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:scrollbars="vertical"
+        android:fontFamily="@font/yekan"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintTop_toBottomOf="@+id/title_detail"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:background="@drawable/edit_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/body_detail"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

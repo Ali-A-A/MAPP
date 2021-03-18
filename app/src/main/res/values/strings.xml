@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MAPP</string>
+    <string name="weight_hint">weight(kg)</string>
+    <string name="height_hint">height(m)</string>
+    <string name="submit">Submit</string>
+    <string name="bmi">BMI</string>
+    <string name="warning">Please go back and enter your weight and height</string>
+</resources>
